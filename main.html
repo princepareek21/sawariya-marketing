@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Prediction Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Color Prediction Game</h1>
+        
+        <!-- Account Section -->
+        <div id="account-section">
+            <h2>Your Account</h2>
+            <p id="account-balance">Balance: $0</p>
+            <button id="deposit-btn">Deposit</button>
+            <button id="withdraw-btn">Withdraw</button>
+            <p id="user-message"></p>
+        </div>
+
+        <!-- Bet Section -->
+        <div id="bet-section">
+            <h2>Place Your Bet</h2>
+            <button id="bet-red" class="bet-btn" data-color="red">Red</button>
+            <button id="bet-blue" class="bet-btn" data-color="blue">Blue</button>
+            <button id="bet-green" class="bet-btn" data-color="green">Green</button>
+            <input type="number" id="bet-amount" placeholder="Amount to Bet">
+            <button id="place-bet-btn">Place Bet</button>
+        </div>
+
+        <!-- Game Outcome -->
+        <div id="game-result">
+            <h2>Game Result</h2>
+            <p id="predicted-color"></p>
+            <p id="game-outcome"></p>
+        </div>
+
+        <!-- Login/Signup Form -->
+        <div id="login-signup">
+            <h2>Login or Signup</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <button id="signup-btn">Signup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

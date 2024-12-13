@@ -1,0 +1,181 @@
+/* style.css */
+
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container that holds all content */
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Header and Game Title */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Account Section Styling */
+#account-section {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#account-section h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: white;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Bet Section Styling */
+#bet-section {
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#bet-section h2 {
+    font-size: 1.5rem;
+    color: #d32f2f;
+}
+
+/* Bet Buttons with Color Highlights */
+.bet-btn {
+    padding: 12px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#bet-red {
+    background-color: red;
+    color: white;
+}
+
+#bet-blue {
+    background-color: blue;
+    color: white;
+}
+
+#bet-green {
+    background-color: green;
+    color: white;
+}
+
+/* Active bet button state */
+.bet-btn.active {
+    transform: scale(1.1);
+    background-color: #ffffff;
+    border: 2px solid #333;
+}
+
+/* Input field for betting amount */
+input[type="number"] {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Game Result Section Styling */
+#game-result {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#predicted-color {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3e2723;
+}
+
+#game-outcome {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Balance Section Text */
+#account-balance {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* Login/Signup Form Section */
+#login-signup {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#login-signup input {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login-signup button {
+    width: 100%;
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#login-signup button:hover {
+    background-color: #303f9f;
+}
+
+/* Responsive Styling */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .bet-btn {
+        width: 80px;
+    }
+}
